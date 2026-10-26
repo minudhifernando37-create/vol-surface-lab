@@ -18,7 +18,7 @@ st.title("Equity Derivatives: Volatility Surface & Delta Hedging")
 # ---------------------------------------------------------------- sidebar
 with st.sidebar:
     st.header("Market data")
-    source = st.radio("Data source", ["Live (Yahoo Finance)", "Synthetic demo"])
+    source = st.radio("Data source", ["Live (Yahoo Finance)", "Synthetic demo"], index=1)
     ticker = st.text_input("Ticker", "SPY").strip().upper()
     max_expiries = st.slider("Number of expiries", 3, 15, 8)
     st.header("Model inputs")
